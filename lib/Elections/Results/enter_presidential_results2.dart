@@ -206,6 +206,7 @@ class _EnterPresidentialResultScreen2State extends State<EnterPresidentialResult
                                                 ),
                                                 border: InputBorder.none,
                                               ),
+                                              keyboardType: TextInputType.number,
                                               inputFormatters: [
                                                 LengthLimitingTextInputFormatter(10),
                                                 FilteringTextInputFormatter.digitsOnly,

@@ -212,6 +212,7 @@ class _EnterParliamentaryResultScreen2State extends State<EnterParliamentaryResu
                                                 ),
                                                 border: InputBorder.none,
                                               ),
+                                              keyboardType: TextInputType.number,
                                               inputFormatters: [
                                                 LengthLimitingTextInputFormatter(10),
                                                 FilteringTextInputFormatter.digitsOnly,
