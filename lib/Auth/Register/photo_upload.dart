@@ -156,7 +156,7 @@ class _UploadPhotoRegState extends State<UploadPhotoReg> {
                                                       },
                                                       child: Icon(Icons.delete_forever, color: Colors.white,),
                                                       style: ElevatedButton.styleFrom(
-                                                        primary: Colors.red,
+                                                        backgroundColor: Colors.red,
                                                         shape: CircleBorder(),
                                                         padding: EdgeInsets.all(8),
                                                       ),

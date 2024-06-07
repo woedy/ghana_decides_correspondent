@@ -13,8 +13,8 @@ const bodyText2 = Color(0xffffffff);
 const clay = Color(0xffa499b3);
 
 
-const hostName = "http://192.168.43.223:8000/api/";
-const hostNameMedia = "http://192.168.43.223:8000";
+const hostName = "http://192.168.43.121:8000/api/";
+const hostNameMedia = "http://192.168.43.121:8000";
 
 
 
