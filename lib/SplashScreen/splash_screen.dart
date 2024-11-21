@@ -16,11 +16,9 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
-
-
   @override
   Widget build(BuildContext context) {
+    print('Wooooooo');
     return Scaffold(
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -51,23 +49,22 @@ class _SplashScreenState extends State<SplashScreen> {
                           Text(
                             "Ghana Decides",
                             style: TextStyle(
-                              height: 1,
+                                height: 1,
                                 fontSize: 40,
                                 fontWeight: FontWeight.w700,
                                 fontFamily: "Fontspring",
-                            color: Colors.black),
+                                color: Colors.black),
                           ),
                           Text(
                             "2024",
                             style: TextStyle(
-                                fontSize: 90,
-                                height: 1,
-                                fontWeight: FontWeight.w900,
-                                fontFamily: "Fontspring",
-                                color: Colors.black,
+                              fontSize: 90,
+                              height: 1,
+                              fontWeight: FontWeight.w900,
+                              fontFamily: "Fontspring",
+                              color: Colors.black,
                             ),
                           ),
-
                           SizedBox(
                             height: 20,
                           ),
@@ -75,18 +72,17 @@ class _SplashScreenState extends State<SplashScreen> {
                             padding: EdgeInsets.all(10),
                             width: 250,
                             decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10)
-                            ),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10)),
                             child: Center(
                               child: Text(
                                 "Powered by SamaLTE",
                                 style: TextStyle(
-                                    fontSize: 14,
-                                    height: 1,
-                                    fontWeight: FontWeight.w700,
-                                    fontFamily: "Fontspring",
-                                    color: Colors.black,
+                                  fontSize: 14,
+                                  height: 1,
+                                  fontWeight: FontWeight.w700,
+                                  fontFamily: "Fontspring",
+                                  color: Colors.black,
                                 ),
                               ),
                             ),
@@ -96,10 +92,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     ),
                     InkWell(
                       onTap: () {
-
-                        Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => HomeScreen()));
-
-
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => HomeScreen()));
                       },
                       child: Container(
                         padding: EdgeInsets.all(20),
@@ -117,7 +111,6 @@ class _SplashScreenState extends State<SplashScreen> {
                         ),
                       ),
                     ),
-
                   ],
                 ),
               ),
@@ -127,6 +120,4 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
     );
   }
-
-
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ghd_correspondent/constants.dart';
 
 class ErrorDialogBox extends StatefulWidget {
   final String text;
@@ -21,18 +22,23 @@ class _ErrorDialogBoxState extends State<ErrorDialogBox> {
           margin: EdgeInsets.all(20),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.0), // Border radius of 30
-            color: Colors.white, // Blue color
+            color: Colors.white.withOpacity(0.9),
           ),
           padding: EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-             Icon(Icons.error, color: Colors.red, size: 50,),
+              Icon(
+                Icons.error,
+                color: Colors.red,
+                size: 50,
+              ),
               SizedBox(height: 30), // Spacer
-              Text(widget.text,
+              Text(
+                widget.text,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.black),
               ), // Text
             ],
           ),

@@ -1,23 +1,9 @@
-import 'dart:convert';
 
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ghd_correspondent/Auth/Login/models/sign_in_model.dart';
-import 'package:ghd_correspondent/Auth/Register/register_screen.dart';
-import 'package:ghd_correspondent/Auth/Register/select_region.dart';
-import 'package:ghd_correspondent/Components/generic_error_dialog_box.dart';
-import 'package:ghd_correspondent/Components/generic_loading_dialogbox.dart';
-import 'package:ghd_correspondent/Components/generic_success_dialog_box.dart';
-import 'package:ghd_correspondent/Components/keyboard_utils.dart';
 import 'package:ghd_correspondent/Elections/Selects/elcetion_select_region.dart';
 import 'package:ghd_correspondent/Elections/SelectsParl/parl_elcetion_select_region.dart';
-import 'package:ghd_correspondent/Elections/enter_parliamentary_results.dart';
-import 'package:ghd_correspondent/Elections/enter_presidential_results.dart';
-import 'package:ghd_correspondent/Homepage/homepage_screen.dart';
-import 'package:ghd_correspondent/constants.dart';
-import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
 
 
 

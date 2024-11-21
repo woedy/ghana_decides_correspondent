@@ -5,17 +5,13 @@ import 'package:ghd_correspondent/Auth/Register/select_region.dart';
 import 'package:ghd_correspondent/SplashScreen/splash_screen.dart';
 import 'package:ghd_correspondent/theme.dart';
 
-
 import 'constants.dart';
-
-
-
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+          [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
       .then((value) => {runApp(MyApp())});
 }
 
@@ -56,16 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
     _user_api = apiKey();
   }
 
-
   @override
   Widget build(BuildContext context) {
+    
     return FutureBuilder(
         future: _user_api,
         builder: (BuildContext context, AsyncSnapshot snapshot) {
-
           //return api_key == null ? SplashScreen() : HomeScreen();
           return SplashScreen();
-
         });
   }
 

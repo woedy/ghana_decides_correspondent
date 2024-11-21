@@ -21,18 +21,23 @@ class _SuccessDialogBoxState extends State<SuccessDialogBox> {
           margin: EdgeInsets.all(20),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.0), // Border radius of 30
-            color: Colors.white, // Blue color
+            color: Colors.white.withOpacity(0.9),
           ),
           padding: EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-             Icon(Icons.check_circle, color: Colors.green, size: 50,),
+              Icon(
+                Icons.check_circle,
+                color: Colors.green,
+                size: 50,
+              ),
               SizedBox(height: 30), // Spacer
-              Text(widget.text,
+              Text(
+                widget.text,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.black),
               ), // Text
             ],
           ),
